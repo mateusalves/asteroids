@@ -61,8 +61,7 @@ if __name__ == "__main__":
             for shot in shots:
                 if asteroid.collision_with(shot):
                     shot.kill()
-                    asteroid.kill()
-
+                    asteroid.split()
 
         pygame.display.flip()
 
