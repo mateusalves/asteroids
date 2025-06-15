@@ -31,6 +31,7 @@ if __name__ == "__main__":
             if event.type == pygame.QUIT:
                 break
         screen.fill("black")
+        player.update(dt)
         player.draw(screen)
         pygame.display.flip()
 
